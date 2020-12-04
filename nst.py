@@ -8,8 +8,7 @@ import numpy as np
 STYLE_WEIGHT = 1
 CONTENT_WEIGHT = 10000000
 
-EPOCHS = 1
-STEPS_PER_EPOCH = 100
+EPOCHS = 100
 
 def load_img(path_to_img,max_dim=512):
     img = tf.io.read_file(path_to_img)
@@ -131,11 +130,10 @@ content_weight = CONTENT_WEIGHT / 1e5
 
 generated_img = tf.Variable(content_img)
 
-step = 0
 for n in range(EPOCHS):
-    for m in range(STEPS_PER_EPOCH):
-        step += 1
-        train_step(generated_img)
-        print("-+", end='')
-    print(f"Train step: {step}")
+    train_step(generated_img)
+    if n % 100 == 0:
+        print(" ")
+    print("_", end='')
+
 plt.imsave(sys.argv[1],tf.squeeze(generated_img).numpy())

@@ -21,7 +21,7 @@ The following is an implementation of Neural Style Transfer from the paper [A Ne
 ## Example: 
 For testing purposes, the style was extracted from the style image (left) and used to manipulate the content image (right).
 
-<img src="https://i.imgur.com/UWIRzW9.jpeg" width="500" height="500"> <img src="https://i.imgur.com/F28w3Ac.jpg" width="500" height="500">
+<img src="https://i.imgur.com/UWIRzW9.jpeg" width="350" height="500"> <img src="https://i.imgur.com/F28w3Ac.jpg" width="350" height="500">
 
 After 100 interations
 
