@@ -5,6 +5,8 @@ Neural style transfer is an optimization technique used to take two images—a c
 
 The following is an implementation of Neural Style Transfer from the paper [A Neural Algorithm of Artistic Style](http://arxiv.org/abs/1508.06576) in Tensorflow using the VGG-19 model
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/green-mint/Neural-Style-Transfer-using-Tensorflow/blob/master/nst.ipynb)
+
 ## Guide:
 
 1. Clone the repo into the working directory and move into it using
@@ -21,7 +23,7 @@ The following is an implementation of Neural Style Transfer from the paper [A Ne
 ## Example: 
 For testing purposes, the style was extracted from the style image (left) and used to manipulate the content image (right).
 
-<img src="https://i.imgur.com/UWIRzW9.jpeg" width="350" height="500"> <img src="https://i.imgur.com/F28w3Ac.jpg" width="350" height="500">
+<img src="https://i.imgur.com/UWIRzW9.jpeg" width="350" height="450"> <img src="https://i.imgur.com/F28w3Ac.jpg" width="350" height="450">
 
 After 100 interations
 
